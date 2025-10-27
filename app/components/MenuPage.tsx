@@ -8,8 +8,6 @@ const menuData = {
     {
       id: 1,
       name: "Biryani Specials",
-      description:
-        "Authentic biryanis cooked with traditional spices and herbs.",
       image: {
         url: "https://images.pexels.com/photos/2611917/pexels-photo-2611917.jpeg?w=600",
       },
@@ -17,8 +15,6 @@ const menuData = {
         {
           id: 101,
           name: "Chicken Dum Biryani",
-          description:
-            "Fragrant rice layered with marinated chicken and spices.",
           price: { full: 220, half: 140 },
           isVeg: false,
           isSpicy: true,
@@ -26,7 +22,6 @@ const menuData = {
         {
           id: 102,
           name: "Veg Biryani",
-          description: "Aromatic basmati rice with fresh vegetables and herbs.",
           price: { full: 180 },
           isVeg: true,
           isSpicy: false,
@@ -36,7 +31,6 @@ const menuData = {
     {
       id: 2,
       name: "Starters",
-      description: "Tandoori and fried starters to kick off your meal.",
       image: {
         url: "https://images.pexels.com/photos/2673353/pexels-photo-2673353.jpeg?w=600",
       },
@@ -70,9 +64,12 @@ const MenuPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: theme.background }}>
+    <div
+      className="min-h-screen lg:w-4xl sm:w-auto"
+      style={{ backgroundColor: theme.primaryColour }}
+    >
       {/* Hero Section */}
-      <section className="text-center py-16">
+      <section className="text-center py-16  mx-2">
         <h1 className="text-4xl font-bold mb-3" style={{ color: theme.accent }}>
           Our Menu
         </h1>
@@ -105,12 +102,6 @@ const MenuPage: React.FC = () => {
                 >
                   {category.name}
                 </h2>
-                <p
-                  className="text-sm sm:text-base"
-                  style={{ color: theme.textMuted }}
-                >
-                  {category.description}
-                </p>
               </div>
               <span
                 className={`text-2xl pr-4 transition-transform ${
@@ -146,9 +137,6 @@ const MenuPage: React.FC = () => {
                           </span>
                         )}
                       </div>
-                      <p className="text-sm text-gray-400">
-                        {item.description}
-                      </p>
                     </div>
 
                     <div
