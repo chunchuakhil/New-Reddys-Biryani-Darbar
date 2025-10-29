@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+.heading-outline {
+  text-shadow: -2px -2px 0 #b22222, 2px -2px 0 #b22222, -2px 2px 0 #b22222,
+    2px 2px 0 #b22222;
+}

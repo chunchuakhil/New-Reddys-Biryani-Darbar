@@ -65,11 +65,11 @@ const MenuPage: React.FC = () => {
 
   return (
     <div
-      className="min-h-screen lg:w-4xl sm:w-auto"
+      className=" lg:w-4xl sm:w-auto"
       style={{ backgroundColor: theme.primaryColour }}
     >
       {/* Hero Section */}
-      <section className="text-center py-16  mx-2">
+      <section className="text-center py-10  mx-2">
         <h1 className="text-4xl font-bold mb-3" style={{ color: theme.accent }}>
           Our Menu
         </h1>
@@ -79,7 +79,7 @@ const MenuPage: React.FC = () => {
       </section>
 
       {/* Menu Section */}
-      <section className="max-w-5xl mx-auto px-4 pb-24">
+      <section className="max-w-5xl mx-auto px-4 pb-18">
         {menuData.categories.map((category) => (
           <div
             key={category.id}
